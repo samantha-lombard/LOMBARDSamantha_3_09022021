@@ -16,7 +16,7 @@ body {
 }
 
 #section1 {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
   padding-bottom: 50px;
 }
 #section1 form {
@@ -24,19 +24,25 @@ body {
   background-color: #e6e6e6;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 18%;
+  display: flex;
 }
-#section1 form input {
+#section1 form #search {
+  margin-left: auto;
+  margin-right: auto;
+}
+#section1 form #search input {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
   background-color: #e6e6e6;
   border: #e6e6e6;
+  width: 10rem;
+  text-align: center;
 }
-#section1 form i {
+#section1 form #search i {
   font-size: 1.1em;
 }
-#section1 form ::placeholder {
+#section1 form #search ::placeholder {
   color: black;
 }
 #section1 h2 {
