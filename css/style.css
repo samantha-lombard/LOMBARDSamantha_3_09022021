@@ -11,7 +11,7 @@ body a {
   margin-bottom: 3px;
   box-shadow: 3px 0px 0px 5px rgba(0, 0, 0, 0.17);
 }
-#header_main #title_main {
+#header_main h1 {
   font-family: "Shrikhand", cursive;
   font-size: 2.3em;
   text-align: center;
@@ -118,6 +118,69 @@ body a {
 }
 #section2 div p #mobile {
   margin-right: 0.4rem;
+}
+
+#section3 {
+  background-color: #F5F5F5;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+}
+#section3 a {
+  text-decoration: none;
+  color: black;
+}
+#section3 h2 {
+  font-size: 1.6em;
+}
+#section3 article {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+#section3 article .icon {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#section3 article img {
+  height: 180px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+#section3 article .new {
+  background-color: #99E2D0;
+  padding: 5px 5px 5px 5px;
+  width: 5rem;
+  color: #198653;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+#section3 article h3 {
+  font-size: 1.3em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+#section3 article p {
+  font-size: 1.2em;
+}
+#section3 article .map {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#section3 article i {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
