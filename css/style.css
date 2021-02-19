@@ -9,7 +9,7 @@ body a {
 #header_main {
   padding-top: 10px;
   margin-bottom: 3px;
-  box-shadow: 3px 0px 0px 5px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 #header_main h1 {
   font-family: "Shrikhand", cursive;
@@ -18,51 +18,51 @@ body a {
   margin: 0px;
 }
 
-#section1 {
+#section1_main {
   background-color: #F5F5F5;
   padding-bottom: 50px;
 }
-#section1 form {
+#section1_main form {
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: #E6E6E6;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
 }
-#section1 form #search {
+#section1_main form #search {
   margin-left: auto;
   margin-right: auto;
 }
-#section1 form #search input {
+#section1_main form #search input {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
-  background-color: #e6e6e6;
-  border: #e6e6e6;
+  background-color: #E6E6E6;
+  border: #E5E5E5;
   width: 10rem;
   text-align: center;
 }
-#section1 form #search i {
+#section1_main form #search i {
   font-size: 1.1em;
 }
-#section1 form #search ::placeholder {
+#section1_main form #search ::placeholder {
   color: black;
 }
-#section1 h2 {
+#section1_main h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6em;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
 }
-#section1 p {
+#section1_main p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
   margin-left: 5%;
   margin-right: 5%;
 }
-#section1 button {
+#section1_main button {
   width: 70%;
   margin-top: 10px;
   margin-left: 15%;
@@ -78,18 +78,18 @@ body a {
   cursor: pointer;
 }
 
-#section2 {
+#section2_main {
   padding-left: 7%;
   padding-right: 7%;
   font-family: "Roboto", sans-serif;
 }
-#section2 h2 {
+#section2_main h2 {
   font-size: 1.6em;
 }
-#section2 div {
+#section2_main div {
   margin-left: 3%;
 }
-#section2 div p {
+#section2_main div p {
   border-radius: 20px;
   background-color: #F5F5F5;
   padding-top: 25px;
@@ -98,13 +98,13 @@ body a {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-#section2 div p:hover {
+#section2_main div p:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
-#section2 div p:hover i {
+#section2_main div p:hover i {
   color: #9356DC;
 }
-#section2 div p .number {
+#section2_main div p .number {
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
   background-color: #9356DC;
@@ -112,15 +112,15 @@ body a {
   margin-left: -10px;
   margin-right: 10px;
 }
-#section2 div p i {
+#section2_main div p i {
   margin-right: 2%;
   color: #747474;
 }
-#section2 div p #mobile {
+#section2_main div p #mobile {
   margin-right: 0.4rem;
 }
 
-#section3 {
+#section3_main {
   background-color: #F5F5F5;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -129,14 +129,14 @@ body a {
   margin-top: 60px;
   font-family: "Roboto", sans-serif;
 }
-#section3 a {
+#section3_main a {
   text-decoration: none;
   color: black;
 }
-#section3 h2 {
+#section3_main h2 {
   font-size: 1.6em;
 }
-#section3 article {
+#section3_main article {
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -144,18 +144,18 @@ body a {
   margin-bottom: 15px;
   position: relative;
 }
-#section3 article .icon {
+#section3_main article .icon {
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
 }
-#section3 article img {
+#section3_main article img {
   height: 180px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-#section3 article .new {
+#section3_main article .new {
   background-color: #99E2D0;
   padding: 5px 5px 5px 5px;
   width: 5rem;
@@ -164,23 +164,55 @@ body a {
   top: -5px;
   right: 10px;
 }
-#section3 article h3 {
+#section3_main article h3 {
   font-size: 1.3em;
   margin-top: 15px;
   margin-bottom: 0px;
 }
-#section3 article p {
+#section3_main article p {
   font-size: 1.2em;
 }
-#section3 article .map {
+#section3_main article .map {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-#section3 article i {
+#section3_main article i {
   display: flex;
   align-items: center;
   margin-left: auto;
   font-size: 1.2em;
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  padding-top: 15px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+}
+footer nav ul {
+  padding-left: 0px;
+}
+footer nav ul li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+footer nav ul li i {
+  margin-right: 0.5rem;
+}
+footer nav ul li span {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
