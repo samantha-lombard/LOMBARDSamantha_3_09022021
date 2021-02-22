@@ -4,6 +4,8 @@ body {
 }
 body a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 #header_main {
@@ -129,10 +131,6 @@ body a {
   margin-top: 60px;
   font-family: "Roboto", sans-serif;
 }
-#section3_main a {
-  text-decoration: none;
-  color: black;
-}
 #section3_main h2 {
   font-size: 1.6em;
 }
@@ -194,7 +192,6 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 footer a {
-  text-decoration: none;
   color: white;
 }
 footer h3 {
@@ -213,6 +210,65 @@ footer nav ul li i {
 }
 footer nav ul li span {
   margin-right: 0.5rem;
+}
+
+#header_other {
+  height: 80px;
+}
+#header_other div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 18%;
+}
+#header_other div i {
+  color: black;
+}
+#header_other div h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.3em;
+}
+
+#section1_other {
+  position: relative;
+}
+#section1_other img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#section1_other div {
+  width: 86%;
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #F5F5F5;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -30px;
+  position: absolute;
+  top: 260px;
+}
+#section1_other div h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.6em;
+}
+#section1_other div i {
+  margin-left: auto;
+  font-size: 1.2em;
+}
+
+#section2_other {
+  background-color: #F5F5F5;
+  margin-top: -15px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+#section2_other h3 {
+  font-weight: normal;
+  border-bottom: 3px solid #99E2D0;
+  width: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

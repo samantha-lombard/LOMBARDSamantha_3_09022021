@@ -31,6 +31,8 @@ body {
     margin: auto;
     a {
         cursor: pointer;
+        text-decoration: none;
+        color: black;
     }
 }
 
@@ -148,10 +150,6 @@ body {
     padding-right: 7%;
     margin-top: 60px;
     font-family: $font-text;
-    a {
-        text-decoration: none;
-        color: black;
-    }
     h2 {
         font-size: $size-h2;
     }
@@ -213,7 +211,6 @@ footer {
     margin-top: 0px;
     font-family: $font-text;
     a {
-        text-decoration: none;
         color: white;
     }
     h3 {
@@ -234,5 +231,64 @@ footer {
                 }
             }
         }
+    }
+}
+
+#header_other {
+    height: 80px;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 18%; 
+        i {
+            color: black;
+        }
+        h1 {
+            font-family: $font-title;
+            font-size: $size-h1;
+        }
+    }
+}
+
+#section1_other {
+    position: relative;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    div {
+        width: 86%;
+        display: flex;
+        align-items: center;
+        padding-left: 7%;
+        padding-right: 7%;
+        background-color: $bckg-color;
+        border-radius: 20px 20px 0px 0px;
+        margin-top: -30px;
+        position: absolute;
+        top: 260px;
+        h2 {
+            font-family: $font-title;
+            font-size: $size-h2;
+        }
+        i {
+            margin-left: auto;
+            font-size: $size-p;
+        }
+    }
+}
+
+#section2_other {
+    background-color: $bckg-color;
+    margin-top: -15px;
+    font-family: $font-text;
+    padding-left: 7%;
+    padding-right: 7%;
+    h3 {
+        font-weight: normal;
+        border-bottom: 3px solid $color-tertiary;
+        width: 3rem;
     }
 }
