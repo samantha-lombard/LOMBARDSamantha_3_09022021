@@ -1,3 +1,15 @@
+#section4_other button, #section1_main button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  padding: 10px 2% 10px 2%;
+  color: white;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 body {
   width: 100%;
   margin: auto;
@@ -18,6 +30,23 @@ body a {
   font-size: 2.3em;
   text-align: center;
   margin: 0px;
+}
+
+#header_other {
+  height: 80px;
+}
+#header_other div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 18.7rem;
+}
+#header_other div i {
+  color: black;
+}
+#header_other div h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.3em;
 }
 
 #section1_main {
@@ -69,15 +98,35 @@ body a {
   margin-top: 10px;
   margin-left: 15%;
   margin-right: 15%;
-  font-family: "Roboto", sans-serif;
+}
+
+#section1_other {
+  position: relative;
+}
+#section1_other img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#section1_other div {
+  width: 86%;
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #F5F5F5;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -30px;
+  position: absolute;
+  top: 260px;
+}
+#section1_other div h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.6em;
+}
+#section1_other div i {
+  margin-left: auto;
   font-size: 1.2em;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 50px;
-  padding: 10px 2% 10px 2%;
-  color: white;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
 #section2_main {
@@ -124,10 +173,7 @@ body a {
 
 #section3_main {
   background-color: #F5F5F5;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding: 20px 7% 50px 7%;
   margin-top: 60px;
   font-family: "Roboto", sans-serif;
 }
@@ -181,13 +227,63 @@ body a {
   font-size: 1.2em;
 }
 
+#section2_other, #section4_other, #section3_other {
+  background-color: #F5F5F5;
+  margin-top: -20px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 10px;
+}
+#section2_other h3, #section4_other h3, #section3_other h3 {
+  font-weight: normal;
+  border-bottom: 3px solid #99E2D0;
+  width: 3rem;
+  padding-top: 10px;
+}
+#section2_other article, #section4_other article, #section3_other article {
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+#section2_other article h4, #section4_other article h4, #section3_other article h4 {
+  font-size: 1.1em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#section2_other article div, #section4_other article div, #section3_other article div {
+  display: flex;
+  align-items: center;
+}
+#section2_other article div p, #section4_other article div p, #section3_other article div p {
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 3%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+#section2_other article div span, #section4_other article div span, #section3_other article div span {
+  margin-left: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#section4_other button {
+  width: 60%;
+  margin: 20px 20% 30px 20%;
+}
+
 footer {
   background-color: #242424;
   color: white;
-  padding-top: 15px;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-bottom: 15px;
+  padding: 15px 7% 15px 7%;
   margin-top: 0px;
   font-family: "Roboto", sans-serif;
 }
@@ -210,65 +306,6 @@ footer nav ul li i {
 }
 footer nav ul li span {
   margin-right: 0.5rem;
-}
-
-#header_other {
-  height: 80px;
-}
-#header_other div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 18%;
-}
-#header_other div i {
-  color: black;
-}
-#header_other div h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2.3em;
-}
-
-#section1_other {
-  position: relative;
-}
-#section1_other img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-#section1_other div {
-  width: 86%;
-  display: flex;
-  align-items: center;
-  padding-left: 7%;
-  padding-right: 7%;
-  background-color: #F5F5F5;
-  border-radius: 20px 20px 0px 0px;
-  margin-top: -30px;
-  position: absolute;
-  top: 260px;
-}
-#section1_other div h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.6em;
-}
-#section1_other div i {
-  margin-left: auto;
-  font-size: 1.2em;
-}
-
-#section2_other {
-  background-color: #F5F5F5;
-  margin-top: -15px;
-  font-family: "Roboto", sans-serif;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-#section2_other h3 {
-  font-weight: normal;
-  border-bottom: 3px solid #99E2D0;
-  width: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
