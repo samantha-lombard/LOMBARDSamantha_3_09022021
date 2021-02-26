@@ -1,6 +1,10 @@
 $color-primary: #9356DC;
+$color-primary-op: rgb(147,86,220,0.8); 
 $color-secondary: #FF79DA;
+$color-secondary-op: rgb(255,121,218,0.8);
 $color-tertiary: #99E2D0;
+$color-button: linear-gradient(to bottom right, $color-secondary, $color-primary);
+$color-button-op: linear-gradient(to bottom right, $color-secondary-op, $color-primary-op);
 $bckg-color: #F5F5F5;
 $bckg-heart: linear-gradient(to top left, $color-secondary, $color-primary);
 
@@ -14,6 +18,7 @@ $size-p: 1.2em;
 $size-article: 1.1em;
 
 $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+$shadow-btn-hover: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
 %button-base {
     font-family: $font-text;
@@ -22,9 +27,10 @@ $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     padding: 10px 2% 10px 2%;
     color: white;
-    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background-image: $color-button;
     box-shadow: $shadow;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 @mixin button_1 {
@@ -39,6 +45,11 @@ $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
    @extend %button-base;
     width: 60%;
     margin: 20px 20% 30px 20%;
+}
+
+@mixin button_hover {
+    background-image: $color-button-op;
+    box-shadow: $shadow-btn-hover;
 }
 
 body {
@@ -124,7 +135,10 @@ body {
         margin-right: 5%;
     }
     button {
-        @include button_1;  
+        @include button_1;
+        &:hover {
+            @include button_hover;
+        }  
     }
 }
 
@@ -252,6 +266,13 @@ body {
             align-items: center;
             margin-left: auto;
             font-size: $size-p;
+            transition: all 1.5s;
+            &:hover {
+                background-image: $bckg-heart;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;   
+            }
         }
     }
 }
@@ -308,6 +329,9 @@ body {
     @extend #section2_other;
     button {
         @include button_2;
+        &:hover {
+            @include button_hover;
+        }
     }
 }
 
