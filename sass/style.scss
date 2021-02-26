@@ -18,7 +18,7 @@ $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 %button-base {
     font-family: $font-text;
     font-size: $size-p;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: none;
     border-radius: 50px;
     padding: 10px 2% 10px 2%;
     color: white;
@@ -174,6 +174,7 @@ body {
             font-weight: bold;
             box-shadow: $shadow;
             cursor: pointer;
+            transition: all 0.5s;
             &:hover {
                 background-color: rgba(147,86,220,0.1);
                 i {
