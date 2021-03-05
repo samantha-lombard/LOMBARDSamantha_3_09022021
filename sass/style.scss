@@ -15,7 +15,7 @@ $size-h1: 2.3em;
 $size-h2: 1.6em;
 $size-h3: 1.3em;
 $size-p: 1.2em;
-$size-article: 1.1em;
+$size-article: 1em;
 
 $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 $shadow-btn-hover: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -51,6 +51,42 @@ $shadow-btn-hover: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: $shadow-btn-hover;
 }
 
+@mixin span_base_heart {
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+    font-size: $size-p;
+}
+
+@mixin span_base_heart_2 {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    font-size: $size-p;
+}
+
+@mixin heart_full {
+    opacity: 0;
+    background-color: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 1.5rem;
+    margin-left: 90%;
+    transition: all 1.5s;
+}
+
+@mixin heart_full_hover {
+    opacity: 1;
+    background-image: $bckg-heart;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin heart_empty {
+    width: 1.5rem;
+    margin-left: 90%;
+}
+
 body {
     width: 100%;
     margin: auto;
@@ -60,6 +96,15 @@ body {
         color: black;
     }
 }
+
+// #loader {
+//     position: fixed;
+//     display: flex;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: white;
+//     z-index: 1000;
+// }
 
 #header_main {
     padding-top: 10px;
@@ -163,9 +208,22 @@ body {
             font-family: $font-title;
             font-size: $size-h2;
         }
-        i {
-            margin-left: auto;
-            font-size: $size-p;
+        span {
+            @include span_base_heart_2;
+            #h_9 {
+                @include heart_full;
+            }
+            #h_10 {
+               @include heart_empty; 
+            }
+            &:hover {
+                #h_9 {
+                  @include heart_full_hover;  
+                }  
+                #h_10 {
+                    opacity: 0;
+                } 
+            }
         }
     }
 }
@@ -259,32 +317,70 @@ body {
             margin-top: 5px;
             margin-bottom: 15px;
         }
-        span {
-            position: absolute;
-            right: 40px;
-            bottom: 45px;
-            font-size: $size-p;
+        #span_1 {
+            @include span_base_heart;
             #h_1 {
-                opacity: 0;
-                background-color: white;
-                -webkit-background-clip: text;
-                color: transparent;
-                width: 1.5rem;
-                margin-left: 90%;
-                transition: all 1.5s;
+                @include heart_full;
             }
             #h_2 {
-                width: 1.5rem;
-                margin-left: 90%;
+               @include heart_empty; 
             }
             &:hover {
                 #h_1 {
-                    opacity: 1;
-                    background-image: $bckg-heart;
-                    -webkit-background-clip: text;
-                    color: transparent;
+                  @include heart_full_hover;  
                 }  
                 #h_2 {
+                    opacity: 0;
+                } 
+            }
+        }
+        #span_2 {
+            @include span_base_heart;
+            #h_3 {
+                @include heart_full;
+            }
+            #h_4 {
+                @include heart_empty;
+            }
+            &:hover {
+                #h_3 {
+                    @include heart_full_hover;
+                }  
+                #h_4 {
+                    opacity: 0;
+                } 
+            }
+        }     
+        #span_3 {
+            @include span_base_heart;
+            #h_5 {
+                @include heart_full;
+            }
+            #h_6 {
+                @include heart_empty;
+            }
+            &:hover {
+                #h_5 {
+                    @include heart_full_hover;
+                }  
+                #h_6 {
+                    opacity: 0;
+                } 
+            }
+        }     
+        #span_4 {
+            @include span_base_heart;
+            #h_7 {
+                @include heart_full;
+            }
+            #h_8 {
+                @include heart_empty;
+            }
+            &:hover {
+                #h_7 {
+                    @include heart_full_hover;
+                }  
+                #h_8 {
                     opacity: 0;
                 } 
             }
@@ -299,6 +395,11 @@ body {
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 10px;
+    // animation-name: menu;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    // animation-iteration-count: 1;
+    animation: menu 1s 1 forwards;
     h3 {
         font-weight: normal;
         border-bottom: 3px solid $color-tertiary;
@@ -317,6 +418,9 @@ body {
             font-size: $size-article;
             margin-top: 0px;
             margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         div {
             display: flex;
@@ -338,6 +442,18 @@ body {
             }
         }
     }
+}
+
+#section2_other {
+    animation-delay: 0.5s;
+}
+
+#section3_other {
+    animation-delay: 1.5s;
+}
+
+#section4_other {
+    animation-delay: 2.5s;
 }
 
 #section4_other {
@@ -377,5 +493,16 @@ footer {
                 }
             }
         }
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

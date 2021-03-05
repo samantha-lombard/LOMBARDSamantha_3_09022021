@@ -128,9 +128,33 @@ body a {
   font-family: "Shrikhand", cursive;
   font-size: 1.6em;
 }
-#section1_other div i {
-  margin-left: auto;
+#section1_other div span {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
   font-size: 1.2em;
+}
+#section1_other div span #h_9 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: all 1.5s;
+}
+#section1_other div span #h_10 {
+  width: 1.5rem;
+  margin-left: 90%;
+}
+#section1_other div span:hover #h_9 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#section1_other div span:hover #h_10 {
+  opacity: 0;
 }
 
 #section2_main {
@@ -224,13 +248,13 @@ body a {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-#section3_main article span {
+#section3_main article #span_1 {
   position: absolute;
   right: 40px;
   bottom: 45px;
   font-size: 1.2em;
 }
-#section3_main article span #h_1 {
+#section3_main article #span_1 #h_1 {
   opacity: 0;
   background-color: white;
   -webkit-background-clip: text;
@@ -239,17 +263,101 @@ body a {
   margin-left: 90%;
   transition: all 1.5s;
 }
-#section3_main article span #h_2 {
+#section3_main article #span_1 #h_2 {
   width: 1.5rem;
   margin-left: 90%;
 }
-#section3_main article span:hover #h_1 {
+#section3_main article #span_1:hover #h_1 {
   opacity: 1;
   background-image: linear-gradient(to top right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
 }
-#section3_main article span:hover #h_2 {
+#section3_main article #span_1:hover #h_2 {
+  opacity: 0;
+}
+#section3_main article #span_2 {
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+  font-size: 1.2em;
+}
+#section3_main article #span_2 #h_3 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: all 1.5s;
+}
+#section3_main article #span_2 #h_4 {
+  width: 1.5rem;
+  margin-left: 90%;
+}
+#section3_main article #span_2:hover #h_3 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#section3_main article #span_2:hover #h_4 {
+  opacity: 0;
+}
+#section3_main article #span_3 {
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+  font-size: 1.2em;
+}
+#section3_main article #span_3 #h_5 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: all 1.5s;
+}
+#section3_main article #span_3 #h_6 {
+  width: 1.5rem;
+  margin-left: 90%;
+}
+#section3_main article #span_3:hover #h_5 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#section3_main article #span_3:hover #h_6 {
+  opacity: 0;
+}
+#section3_main article #span_4 {
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+  font-size: 1.2em;
+}
+#section3_main article #span_4 #h_7 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: all 1.5s;
+}
+#section3_main article #span_4 #h_8 {
+  width: 1.5rem;
+  margin-left: 90%;
+}
+#section3_main article #span_4:hover #h_7 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#section3_main article #span_4:hover #h_8 {
   opacity: 0;
 }
 
@@ -260,6 +368,7 @@ body a {
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 10px;
+  animation: menu 1s 1 forwards;
 }
 #section2_other h3, #section4_other h3, #section3_other h3 {
   font-weight: normal;
@@ -277,16 +386,19 @@ body a {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 #section2_other article h4, #section4_other article h4, #section3_other article h4 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-top: 0px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #section2_other article div, #section4_other article div, #section3_other article div {
   display: flex;
   align-items: center;
 }
 #section2_other article div p, #section4_other article div p, #section3_other article div p {
-  font-size: 1.1em;
+  font-size: 1em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -298,7 +410,19 @@ body a {
   margin-left: auto;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+#section2_other, #section4_other {
+  animation-delay: 0.5s;
+}
+
+#section3_other {
+  animation-delay: 1.5s;
+}
+
+#section4_other {
+  animation-delay: 2.5s;
 }
 
 #section4_other button {
@@ -336,6 +460,17 @@ footer nav ul li i {
 }
 footer nav ul li span {
   margin-right: 0.5rem;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
