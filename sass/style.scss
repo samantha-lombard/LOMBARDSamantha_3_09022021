@@ -395,11 +395,6 @@ body {
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 10px;
-    // animation-name: menu;
-    // animation-duration: 1s;
-    // animation-fill-mode: forwards;
-    // animation-iteration-count: 1;
-    animation: menu 1s 1 forwards;
     h3 {
         font-weight: normal;
         border-bottom: 3px solid $color-tertiary;
@@ -442,18 +437,18 @@ body {
             }
         }
     }
-}
-
-#section2_other {
-    animation-delay: 0.5s;
-}
-
-#section3_other {
-    animation-delay: 1.5s;
-}
-
-#section4_other {
-    animation-delay: 2.5s;
+    .m_1 {
+        animation: menu 1s 1 forwards;
+        animation-delay: 0.5s;
+    }
+    .m_2 {
+        animation: menu 1s 1 forwards;
+        animation-delay: 1.5s;
+    }
+    .m_3 {
+        animation: menu 1s 1 forwards;
+        animation-delay: 2.5s;
+    }
 }
 
 #section4_other {
@@ -499,10 +494,15 @@ footer {
 @keyframes menu {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(-20px);
     }
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
+// animation-name: menu;
+// animation-duration: 1s;
+// animation-iteration-count: 1;
+// animation-fill-mode: forwards;
