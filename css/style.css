@@ -431,16 +431,13 @@ body a {
   font-size: 1em;
 }
 #section2_other .m_1, #section4_other .m_1, #section3_other .m_1 {
-  animation: menu 1s 1 forwards;
-  animation-delay: 0.5s;
+  animation: menu_1 1s 1 forwards;
 }
 #section2_other .m_2, #section4_other .m_2, #section3_other .m_2 {
-  animation: menu 1s 1 forwards;
-  animation-delay: 1.5s;
+  animation: menu_2 1.5s 1 forwards;
 }
 #section2_other .m_3, #section4_other .m_3, #section3_other .m_3 {
-  animation: menu 1s 1 forwards;
-  animation-delay: 2.5s;
+  animation: menu_3 2s 1 forwards;
 }
 
 #section4_other button {
@@ -480,10 +477,36 @@ footer nav ul li span {
   margin-right: 0.5rem;
 }
 
-@keyframes menu {
+@keyframes menu_1 {
   0% {
     opacity: 0;
     transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes menu_2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes menu_3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  35% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
