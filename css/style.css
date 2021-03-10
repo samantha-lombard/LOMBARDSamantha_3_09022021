@@ -8,6 +8,8 @@
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: background-image 0.5s;
+  transition: box-shadow 0.5s;
 }
 
 body {
@@ -160,7 +162,7 @@ body a {
   color: transparent;
   width: 1.5rem;
   margin-left: 90%;
-  transition: all 1.5s;
+  transition: opacity 2s;
 }
 #section1_other div span #h_10 {
   width: 1.5rem;
@@ -195,6 +197,7 @@ body a {
   font-weight: bold;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: background-color 0.5s;
 }
 #section2_main div p:hover {
   background-color: rgba(147, 86, 220, 0.1);
@@ -213,6 +216,7 @@ body a {
 #section2_main div p i {
   margin-right: 2%;
   color: #747474;
+  transition: color 0.5s;
 }
 #section2_main div p #mobile {
   margin-right: 0.4rem;
@@ -280,7 +284,7 @@ body a {
   color: transparent;
   width: 1.5rem;
   margin-left: 90%;
-  transition: all 1.5s;
+  transition: opacity 2s;
 }
 #section3_main article #span_1 #h_2 {
   width: 1.5rem;
@@ -308,7 +312,7 @@ body a {
   color: transparent;
   width: 1.5rem;
   margin-left: 90%;
-  transition: all 1.5s;
+  transition: opacity 2s;
 }
 #section3_main article #span_2 #h_4 {
   width: 1.5rem;
@@ -336,7 +340,7 @@ body a {
   color: transparent;
   width: 1.5rem;
   margin-left: 90%;
-  transition: all 1.5s;
+  transition: opacity 2s;
 }
 #section3_main article #span_3 #h_6 {
   width: 1.5rem;
@@ -364,7 +368,7 @@ body a {
   color: transparent;
   width: 1.5rem;
   margin-left: 90%;
-  transition: all 1.5s;
+  transition: opacity 2s;
 }
 #section3_main article #span_4 #h_8 {
   width: 1.5rem;
@@ -400,6 +404,7 @@ body a {
   padding-left: 2.5%;
   margin-bottom: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
 }
 #section2_other article a, #section4_other article a, #section3_other article a {
   width: 100%;
@@ -407,10 +412,10 @@ body a {
   align-items: center;
 }
 #section2_other article a .food, #section4_other article a .food, #section3_other article a .food {
-  width: 100%;
+  width: 92%;
 }
 #section2_other article a .food h4, #section4_other article a .food h4, #section3_other article a .food h4 {
-  font-size: 1em;
+  font-size: 0.9em;
   margin-top: 10px;
   margin-bottom: 5px;
   white-space: nowrap;
@@ -418,11 +423,12 @@ body a {
   text-overflow: ellipsis;
 }
 #section2_other article a .food .price, #section4_other article a .food .price, #section3_other article a .food .price {
+  width: 100%;
   display: flex;
   align-items: center;
 }
 #section2_other article a .food .price p, #section4_other article a .food .price p, #section3_other article a .food .price p {
-  font-size: 1em;
+  font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -435,25 +441,26 @@ body a {
   margin-right: 2.5%;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.9em;
 }
-#section2_other article a i, #section4_other article a i, #section3_other article a i {
+#section2_other article a .checked, #section4_other article a .checked, #section3_other article a .checked {
   background-color: #99E2D0;
-  color: white;
-  font-size: 1.2em;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-left: 2%;
-  padding-right: 2%;
   border-radius: 0px 20px 20px 0px;
-  opacity: 0;
+  width: 0%;
   text-align: center;
 }
-#section2_other article:hover, #section4_other article:hover, #section3_other article:hover {
-  width: 100%;
+#section2_other article a .checked i, #section4_other article a .checked i, #section3_other article a .checked i {
+  color: white;
+  font-size: 1.2em;
 }
-#section2_other article:hover i, #section4_other article:hover i, #section3_other article:hover i {
-  opacity: 1;
+#section2_other article:hover .checked, #section4_other article:hover .checked, #section3_other article:hover .checked {
+  width: 11%;
+  transition: width 0.3s;
+}
+#section2_other article:hover .checked i, #section4_other article:hover .checked i, #section3_other article:hover .checked i {
+  animation: i_checked 0.3s 1 forwards;
 }
 #section2_other .m_1, #section4_other .m_1, #section3_other .m_1 {
   animation: menu_1 1s 1 forwards;
@@ -505,7 +512,7 @@ footer nav ul li span {
 @keyframes menu_1 {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -515,7 +522,7 @@ footer nav ul li span {
 @keyframes menu_2 {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   25% {
     opacity: 0;
@@ -528,7 +535,7 @@ footer nav ul li span {
 @keyframes menu_3 {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   35% {
     opacity: 0;
@@ -583,6 +590,23 @@ footer nav ul li span {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes i_checked {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 
