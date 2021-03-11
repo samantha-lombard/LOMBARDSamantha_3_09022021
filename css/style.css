@@ -412,7 +412,8 @@ body a {
   align-items: center;
 }
 #section2_other article a .food, #section4_other article a .food, #section3_other article a .food {
-  width: 92%;
+  width: 100%;
+  transition: width 0.5s;
 }
 #section2_other article a .food h4, #section4_other article a .food h4, #section3_other article a .food h4 {
   font-size: 0.9em;
@@ -455,12 +456,14 @@ body a {
   color: white;
   font-size: 1.2em;
 }
+#section2_other article:hover .food, #section4_other article:hover .food, #section3_other article:hover .food {
+  width: 80%;
+}
 #section2_other article:hover .checked, #section4_other article:hover .checked, #section3_other article:hover .checked {
-  width: 11%;
-  transition: width 0.3s;
+  width: 20%;
 }
 #section2_other article:hover .checked i, #section4_other article:hover .checked i, #section3_other article:hover .checked i {
-  animation: i_checked 0.3s 1 forwards;
+  animation: i_checked 0.5s 1 forwards;
 }
 #section2_other .m_1, #section4_other .m_1, #section3_other .m_1 {
   animation: menu_1 1s 1 forwards;

@@ -427,7 +427,8 @@ body {
             display: flex;
             align-items: center;
             .food {
-                width: 92%;
+                width: 100%;
+                transition: width 0.5s;
                 h4 {
                     font-size: $size-article;
                     margin-top: 10px;
@@ -472,11 +473,13 @@ body {
             }
         }
         &:hover {
+            .food {
+                width: 80%;
+            }
             .checked {
-                width: 11%;
-                transition: width 0.3s;
+                width: 20%;
                 i {
-                    animation: i_checked 0.3s 1 forwards;
+                    animation: i_checked 0.5s 1 forwards;
 
                 }
             }
