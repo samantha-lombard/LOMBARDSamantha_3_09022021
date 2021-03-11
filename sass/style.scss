@@ -48,6 +48,12 @@ $shadow-btn-hover: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     margin: 20px 20% 30px 20%;
 }
 
+@mixin button_media_queries {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
 @mixin button_hover {
     background-image: $color-button-op;
     box-shadow: $shadow-btn-hover;
@@ -135,14 +141,17 @@ body {
     div {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 18.7rem; 
+        justify-content: space-around; 
         i {
             color: black;
         }
         h1 {
             font-family: $font-title;
             font-size: $size-h1;
+        }
+        a {
+            position: absolute;
+            left: 1rem;
         }
     }
 }
@@ -466,6 +475,7 @@ body {
                 border-radius: 0px 20px 20px 0px;
                 width: 0%;
                 text-align: center;
+                transition: width 0.5s;
                 i {
                     color: white;
                     font-size: $size-p; 
@@ -639,5 +649,42 @@ footer {
     }
     100% {
         transform: rotate(-360deg);
+    }
+}
+
+@media (min-width: 992px) {
+    #section1_main {
+        button {
+            @include button_media_queries;
+        }
+    }
+    #section2_main {
+        div {
+            display: flex;
+            justify-content: space-between;
+            p {
+                width: 30%;
+            }
+        }
+    }
+    #section3_main {
+        #bloc {
+            display: flex;
+            justify-content: space-between;
+            article {
+                width: 22%;
+            }
+        }
+    }
+    #section1_other {
+        div {
+            width: 40%;
+            margin-left: 23%;
+            margin-right: 23%;
+        }
+    }
+    #section2_other, #section3_other, #section4_other {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
