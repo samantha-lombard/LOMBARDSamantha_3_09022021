@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*Couleurs*/
+/*Polices*/
+/*Tailles de polices*/
+/*Ombres portées*/
+/*EXTEND*/
 #section4_other button, #section1_main button {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
@@ -12,6 +19,8 @@
   transition: box-shadow 0.5s;
 }
 
+/*MIXINS*/
+/*BODY*/
 body {
   width: 100%;
   margin: auto;
@@ -22,6 +31,7 @@ body a {
   color: black;
 }
 
+/*ANIMATION SPIN LOADER ACCUEIL*/
 #loader {
   position: fixed;
   display: flex;
@@ -41,6 +51,7 @@ body a {
   animation: icon_loader 2s 2 forwards;
 }
 
+/*HEADER*/
 #header_main {
   padding-top: 10px;
   margin-bottom: 3px;
@@ -73,6 +84,7 @@ body a {
   left: 1rem;
 }
 
+/*SECTION 1*/
 #section1_main {
   background-color: #F5F5F5;
   padding-bottom: 50px;
@@ -181,6 +193,7 @@ body a {
   opacity: 0;
 }
 
+/*SECTIONS 2 ET 3*/
 #section2_main {
   padding-left: 7%;
   padding-right: 7%;
@@ -479,6 +492,7 @@ body a {
   animation: menu_3 2s 1 forwards;
 }
 
+/*SECTION 4*/
 #section4_other button {
   width: 60%;
   margin: 20px 20% 30px 20%;
@@ -488,6 +502,7 @@ body a {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+/*FOOTER*/
 footer {
   background-color: #242424;
   color: white;
@@ -516,6 +531,7 @@ footer nav ul li span {
   margin-right: 0.5rem;
 }
 
+/*KEYFRAMES*/
 @keyframes menu_1 {
   0% {
     opacity: 0;
@@ -616,6 +632,7 @@ footer nav ul li span {
     transform: rotate(-360deg);
   }
 }
+/*RESPONSIVE GRANDE TABLETTE ET + */
 @media (min-width: 992px) {
   #section1_main button {
     width: 30%;
