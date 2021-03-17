@@ -182,6 +182,7 @@ body a {
 #section1_other div span #h_10 {
   width: 1.5rem;
   margin-left: 90%;
+  color: #353535;
 }
 #section1_other div span:hover #h_9 {
   opacity: 1;
@@ -282,6 +283,7 @@ body a {
 }
 #section3_main article p {
   font-size: 1.2em;
+  color: #353535;
 }
 #section3_main article .map {
   margin-top: 5px;
@@ -305,6 +307,7 @@ body a {
 #section3_main article #span_1 #h_2 {
   width: 1.5rem;
   margin-left: 90%;
+  color: #353535;
 }
 #section3_main article #span_1:hover #h_1 {
   opacity: 1;
@@ -333,6 +336,7 @@ body a {
 #section3_main article #span_2 #h_4 {
   width: 1.5rem;
   margin-left: 90%;
+  color: #353535;
 }
 #section3_main article #span_2:hover #h_3 {
   opacity: 1;
@@ -361,6 +365,7 @@ body a {
 #section3_main article #span_3 #h_6 {
   width: 1.5rem;
   margin-left: 90%;
+  color: #353535;
 }
 #section3_main article #span_3:hover #h_5 {
   opacity: 1;
@@ -389,6 +394,7 @@ body a {
 #section3_main article #span_4 #h_8 {
   width: 1.5rem;
   margin-left: 90%;
+  color: #353535;
 }
 #section3_main article #span_4:hover #h_7 {
   opacity: 1;
@@ -413,6 +419,7 @@ body a {
   border-bottom: 3px solid #99E2D0;
   width: 3rem;
   padding-top: 10px;
+  color: #353535;
 }
 #section2_other article, #section4_other article, #section3_other article {
   background-color: white;
@@ -443,6 +450,7 @@ body a {
   width: 100%;
   display: flex;
   align-items: center;
+  color: #353535;
 }
 #section2_other article a .food .price p, #section4_other article a .food .price p, #section3_other article a .food .price p {
   font-size: 0.9em;
@@ -504,7 +512,7 @@ body a {
 
 /*FOOTER*/
 footer {
-  background-color: #242424;
+  background-color: #353535;
   color: white;
   padding: 15px 7% 15px 7%;
   margin-top: 0px;
